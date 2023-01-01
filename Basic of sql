@@ -1,3 +1,19 @@
+SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+
 create database ezhilraj;
 
 drop database ezhilraj;
+
+insert into customers values('101','Ezhil','9942267001','Erode','India');
+
+insert into customers values('102','raj','7530070501','Thindal','America'),('103','Rajesh','6380688699','kerala','America');
