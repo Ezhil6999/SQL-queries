@@ -1,0 +1,3 @@
+create database ezhilraj;
+
+drop database ezhilraj;
