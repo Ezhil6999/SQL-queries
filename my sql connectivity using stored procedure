@@ -1,0 +1,28 @@
+stored procedure
+DELIMITER //
+CREATE PROCEDURE student_details(name1 varchar(20), age1 int)
+BEGIN
+  INSERT INTO studentdetails (name, age) VALUES (name1, age1);
+END //
+DELIMITER ;
+
+-------------------------------------------------------------
+import mysql.connector
+# Replace these values with your MySQL server's details
+db_config = {
+    "host": "127.0.0.1",
+    "user": "root",
+    "database": "ezhil",
+}
+print("mysql connected")
+connection = mysql.connector.connect(**db_config)
+cursor=connection.cursor()
+cursor.callproc("student_details",("Rajesh",23))
+connection.commit()
+
+print("Data inserted successfully!")
+
+cursor.close()
+connection.close()
+# Establish a connection to the database
+# connection = mysql.connector.connect(**db_config)
