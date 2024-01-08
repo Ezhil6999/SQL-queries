@@ -1,0 +1,15 @@
+main                          -- create role nlp;
+                              -- grant select,update,insert,delete on world.* to nlp;
+                              -- create user 'teamers' identified by 'welcome@123' default role 'nlp'
+                              -- show privileges
+                              -- create table nlp(name varchar(30),age int,field varchar(30),phonenumber varchar(20));
+                              -- INSERT INTO nlp (name, age, field, phonenumber)
+                              -- VALUES ('ezhil', 21, 'software engineer', '733r7234687');
+                              -- select * from nlp;
+administer>user privileage
+
+anotetr user                  -- create database world;
+                              -- use world
+                              
+                              -- select current_role()
+                              -- show grants
